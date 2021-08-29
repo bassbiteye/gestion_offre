@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:id="@+id/rlEditProfile">
+        <ImageView
+            android:layout_width="@dimen/_38sdp"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:tint="@color/black"
+            android:id="@+id/ivMenu"
+            android:src="@drawable/ic_nevigation"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:layout_centerInParent="true"
+            fontPath="@string/font_bold"
+            android:text="Favourite"
+            tools:ignore="MissingPrefix" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rvFavourite"
+        android:visibility="visible"/>
+    <TextView
+        android:id="@+id/tvNoDataFound"
+        fontPath="@string/font_regular"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="No Favourite Wallpaper Found"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/_12ssp"
+        android:visibility="gone"
+        tools:ignore="MissingPrefix" />
+</LinearLayout>

@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">Gestion Emploi</string>
+
+    <!--GILROY-->
+    <string name="font_regular">fonts/Roboto-Regular.ttf</string>
+    <string name="font_medium">fonts/Roboto-Medium.ttf</string>
+    <string name="font_bold">fonts/Roboto-Bold.ttf</string>
+    <string name="font_black">fonts/Roboto-Black.ttf</string>
+    <string name="font_thin">fonts/Roboto-Thin.ttf</string>
+    <string name="font_light">fonts/Roboto-Light.ttf</string>
+    <string name="font_italic">fonts/Roboto-Italic.ttf</string>
+
+    <!--MARK_WEB-->
+    <string name="font_mark_web_thin">fonts/MARK_WEB_W04_BLACK.TTF</string>
+
+    <string name="we_help_you">nous vous aidons à trouver gratuitement \n un nouvel emploi</string>
+    <string name="forgetpass">entrez votre adresse e-mail  \n pour obtenir le mot de passe</string>
+    <string name="skip">Passer</string>
+    <string name="btn_login">Connecter</string>
+    <string name="fpassword">Mot de passe oublié ?</string>
+    <string name="join">Rejoindre ?</string>
+    <string name="Haccount"> Déja inscrit ?</string>
+
+    <string name="logout">Êtes-vous sûr de vous déconnecter de cette application ?</string>
+    <string name="exit_screen">Bien sûr, si vous ne voulez pas quitter cette application</string>
+    <string name="no_internet">Pas de connexion Internet \n Accédez aux paramètres et connectez-vous au réseau.</string>
+    <string name="error_msg">Veuillez réessayer. Une erreur s\'est produite</string>
+    <string name="dialog_permission_title">Accorder des autorisations</string>
+    <string name="dialog_permission_message">Cette application a besoin d\'une autorisation pour utiliser cette fonctionnalité. Vous pouvez les accorder dans les paramètres de l\'application.</string>
+    <string name="go_to_settings">ALLER AUX PARAMÈTRES</string>
+
+    <string name="validation_name">Veuillez saisir le nom.</string>
+    <string name="validation_email">Veuillez saisir l\'email.</string>
+    <string name="validation_password">Veuillez saisir le password.</string>
+    <string name="validation_oldpassword">Veuillez saisir l\'ancien password.</string>
+    <string name="validation_cpassword">Veuillez saisir le confirme password.</string>
+    <string name="validation_valid_email">Veuillez saisir le valide email.</string>
+    <string name="validation_valid_cpassword">Password et confirme password doivent etre le meme.</string>
+    <string name="validation_valid_password">doit comporter au moins huit caractères.</string>
+
+    <string name="validation_category">Veuillez sélectionner une catégorie.</string>
+    <string name="validation_wallpaper">Veuillez sélectionner le fichier de fond d\'écran.</string>
+    <string name="validation_wallpapername">Veuillez saisir le nom du fond d\'écran.</string>
+
+    <string name="label_brush">Brush</string>
+    <string name="label_emoji">Emoji</string>
+    <string name="label_sticker">Sticker</string>
+    <string name="label_eraser">Eraser</string>
+    <string name="label_eraser_mode">Eraser Mode</string>
+    <string name="label_text">Text</string>
+    <string name="label_filter">Filter</string>
+    <string name="label_adjust">Adjust</string>
+    <string name="msg_save_image">Are you want to exit without saving image ?</string>
+    <string name="app_intent_name">PhotoEditor</string>
+    <string name="msg_save_image_to_share">Please save image to share</string>
+    <string name="msg_share_image">Share Image</string>
+
+    <string name="done">Terminé</string>
+    <string name="save">sauvegarder</string>
+    <string name="clear_all">Tout effacer</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="upload_dialog_title">Télécharger une image</string>
+    <string name="upload_picker_title">Sélectionnez l\'image</string>
+    <string name="directory_create_fail">Échec de la création du répertoire</string>
+    <string name="access_media_permissions_msg">Pour joindre des photos, nous devons accéder aux médias sur votre appareil</string>
+    <string name="continue_txt">Continue</string>
+    <string name="not_now">NOT NOW</string>
+    <string name="media_access_denied_msg">You denied storage access, no photos will be added.</string>
+    <string name="default_notification_channel_id">fcm_default_channel</string>
+
+    <string name="ic_close">"\ue918"</string>
+    <string name="ic_text">"\ue945"</string>
+    <string name="ic_draw">""\ue944</string>
+    <string name="ic_images">"\ue949"</string>
+    <string name="ic_save">"\ue946"</string>
+    <string name="ic_clear_all">"\ue947"</string>
+    <string name="ic_continue">"\ue948"</string>
+    <string name="ic_delete">"\ue92c"</string>
+    <string name="choose_from_gallery">Choose From Gallery</string>
+    <string name="choose_from_camera">Choose From Camera</string>
+    <string name="undo">annuler</string>
+    <string name="erase">Effacer</string>
+</resources>

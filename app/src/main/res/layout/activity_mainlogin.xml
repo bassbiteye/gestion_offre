@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.w.app.utils.NonSwipeableViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_sahedow"/>
+    <ImageView
+        android:layout_width="@dimen/_38sdp"
+        android:layout_height="@dimen/_38sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:padding="@dimen/_3sdp"
+        android:layout_marginLeft="@dimen/_2sdp"
+        android:tint="@color/white"
+        android:src="@drawable/ic_back"
+        android:id="@+id/ivBack"
+        android:onClick="onClick"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:paddingLeft="@dimen/_12sdp"
+        android:paddingRight="@dimen/_12sdp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            fontPath="@string/font_bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18ssp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:text="@string/we_help_you"
+            tools:ignore="MissingPrefix" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/bg_corner_white_10"
+            android:id="@+id/edEmailAddress"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            fontPath="@string/font_medium"
+            android:textColor="@color/black"
+            android:paddingLeft="@dimen/_10sdp"
+            android:hint="Email Address"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginTop="@dimen/_10sdp"
+            tools:ignore="MissingPrefix" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/bg_corner_white_10"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:imeOptions="actionGo"
+            android:id="@+id/edPassword"
+            fontPath="@string/font_medium"
+            android:textColor="@color/black"
+            android:paddingLeft="@dimen/_10sdp"
+            android:hint="Password"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginTop="@dimen/_10sdp"
+            tools:ignore="MissingPrefix" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:backgroundTint="#1F2124"
+            android:background="@drawable/bg_corner_white_10"
+            fontPath="@string/font_medium"
+            android:textColor="@color/white"
+            android:onClick="onClick"
+            android:id="@+id/tv_btn_login"
+            android:gravity="center"
+            android:text="@string/btn_login"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginTop="@dimen/_10sdp"
+            tools:ignore="MissingPrefix" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="@string/fpassword"
+            fontPath="@string/font_medium"
+            android:textSize="@dimen/_12ssp"
+            android:onClick="onClick"
+            android:id="@+id/tvForgetPassword"
+            android:textColor="@color/white"
+            tools:ignore="MissingPrefix" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't you have account ?"
+                fontPath="@string/font_medium"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/white"
+                tools:ignore="MissingPrefix" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/join"
+                android:layout_marginLeft="@dimen/_5sdp"
+                fontPath="@string/font_bold"
+                android:textSize="@dimen/_14ssp"
+                android:onClick="onClick"
+                android:textColor="@color/white"
+                android:id="@+id/tvRegistration"
+                tools:ignore="MissingPrefix" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

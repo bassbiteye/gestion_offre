@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:id="@+id/rlToolBar">
+
+        <ImageView
+            android:layout_width="@dimen/_38sdp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/ic_back"
+            android:tint="@color/black"
+            android:id="@+id/ivBack"
+            android:onClick="onClick"/>
+
+        <TextView
+            fontPath="@string/font_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            tools:text="Category Name"
+            android:id="@+id/tvCategoryName"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            tools:ignore="MissingPrefix" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rlToolBar"
+        android:layout_above="@+id/ad"
+        android:id="@+id/rvCategoryByImage"/>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/ad"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"/>
+</RelativeLayout>

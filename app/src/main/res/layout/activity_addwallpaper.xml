@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:id="@+id/rlAddWallpaperTitle">
+        <ImageView
+            android:layout_width="@dimen/_38sdp"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_3sdp"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:tint="@color/black"
+            android:onClick="onClick"
+            android:id="@+id/ivBack"
+            android:src="@drawable/ic_back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:layout_centerInParent="true"
+            fontPath="@string/font_bold"
+            android:text="Add Wallpaper"
+            tools:ignore="MissingPrefix" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlAddWallpaperTitle"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_12ssp"
+            fontPath="@string/font_medium"
+            android:text="Category"
+            tools:ignore="MissingPrefix" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:id="@+id/rlSelectCategory"
+            android:onClick="onClick"
+            android:background="@drawable/bg_gray_corner_10">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Category"
+                fontPath="@string/font_medium"
+                android:textSize="@dimen/_12ssp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:id="@+id/tvSelectCategory"
+                tools:ignore="MissingPrefix" />
+            <ImageView
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_dropdown"
+                />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@android:color/transparent"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/spCategory"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:textSize="@dimen/_12ssp"
+            android:layout_centerInParent="true"
+            fontPath="@string/font_medium"
+            android:text="WallPaper Name"
+            tools:ignore="MissingPrefix" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/bg_onlycorner_gary"
+            android:id="@+id/edWallPaperName"
+            fontPath="@string/font_medium"
+            android:textColor="@color/black"
+            android:paddingLeft="@dimen/_10sdp"
+            android:hint="WallPaper Name"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            tools:ignore="MissingPrefix" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp"
+                fontPath="@string/font_medium"
+                android:text="Select Wallpaper"
+                tools:ignore="MissingPrefix" />
+            <ImageView
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:src="@drawable/ic_plus"
+                android:id="@+id/ivAddWallpaper"
+                android:onClick="onClick"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp"
+            app:riv_corner_radius="3dp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:scaleType="centerCrop"
+            android:id="@+id/ivWallpaper"
+            android:src="@drawable/ic_placeholder"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:backgroundTint="#1F2124"
+        android:background="@drawable/bg_corner_white_10"
+        fontPath="@string/font_medium"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@+id/tvUpload"
+        android:onClick="onClick"
+        android:layout_alignParentBottom="true"
+        android:text="Upload"
+        android:textSize="@dimen/_12ssp"
+        android:layout_margin="@dimen/_10sdp"
+        tools:ignore="MissingPrefix" />
+
+</RelativeLayout>
