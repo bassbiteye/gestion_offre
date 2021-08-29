@@ -102,6 +102,12 @@ class DashboardActivity : BaseActivity() {
                     setWallPaper(5)
                     temp=5
                 }
+            }    R.id.rl_cv -> {
+                drawer_layout!!.closeDrawers()
+                if(temp!=6){
+                    setWallPaper(6)
+                    temp=6
+                }
             }
         }
     }
@@ -207,6 +213,9 @@ class DashboardActivity : BaseActivity() {
                 }else{
                     Common.setCommanLogin(this@DashboardActivity)
                 }
+            }
+            6->{
+                replaceFragment(CvFragment())
             }
         }
     }
